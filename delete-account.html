@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Suppression de compte — Zéro Excuse</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #f5f7fa; color: #2C3E50; min-height: 100vh; }
+    header { background: linear-gradient(135deg, #1E88E5, #1565C0); color: white; padding: 32px 24px; text-align: center; }
+    header h1 { font-size: 28px; font-weight: 900; letter-spacing: 2px; }
+    header p { font-size: 14px; opacity: 0.85; margin-top: 8px; }
+    .container { max-width: 680px; margin: 40px auto; padding: 0 24px 60px; }
+    .card { background: white; border-radius: 16px; padding: 32px; margin-bottom: 24px; box-shadow: 0 4px 20px rgba(0,0,0,0.08); }
+    h2 { font-size: 18px; font-weight: 800; color: #1E88E5; margin-bottom: 16px; }
+    p { font-size: 15px; line-height: 1.7; color: #444; margin-bottom: 12px; }
+    ol, ul { padding-left: 20px; }
+    li { font-size: 15px; line-height: 1.8; color: #444; }
+    .warning { background: #FFF3E0; border-left: 4px solid #FF9800; border-radius: 8px; padding: 16px; margin: 16px 0; }
+    .warning p { color: #E65100; margin: 0; font-weight: 600; }
+    .data-item { display: flex; align-items: center; gap: 10px; padding: 10px 0; border-bottom: 1px solid #f0f0f0; font-size: 14px; color: #555; }
+    .data-item:last-child { border-bottom: none; }
+    .dot { width: 8px; height: 8px; background: #E53935; border-radius: 50%; flex-shrink: 0; }
+    .contact { background: #E3F2FD; border-radius: 12px; padding: 20px; text-align: center; margin-top: 8px; }
+    .contact a { color: #1565C0; font-weight: 700; text-decoration: none; font-size: 16px; }
+    footer { text-align: center; color: #999; font-size: 12px; padding: 24px; }
+  </style>
+</head>
+<body>
+<header>
+  <h1>ZERO EXCUSE</h1>
+  <p>Gestion de votre compte - Suppression des donnees</p>
+</header>
+<div class="container">
+  <div class="card">
+    <h2>Supprimer votre compte depuis l'application</h2>
+    <p>Vous pouvez supprimer votre compte directement depuis l'application Zero Excuse :</p>
+    <ol>
+      <li>Ouvrez l'application <strong>Zero Excuse</strong></li>
+      <li>Appuyez sur l'icone <strong>Profil</strong> en haut a droite</li>
+      <li>Faites defiler jusqu'en bas de la page</li>
+      <li>Appuyez sur <strong>"Supprimer mon compte"</strong></li>
+      <li>Confirmez la suppression</li>
+    </ol>
+    <div class="warning">
+      <p>Cette action est irreversible. Toutes vos donnees seront definitvement supprimees.</p>
+    </div>
+  </div>
+  <div class="card">
+    <h2>Donnees supprimees</h2>
+    <p>Lors de la suppression, les donnees suivantes sont <strong>immediatement et definitvement supprimees</strong> :</p>
+    <div class="data-item"><span class="dot"></span> Adresse email et identifiants de connexion</div>
+    <div class="data-item"><span class="dot"></span> Toutes vos pesees et historique de poids</div>
+    <div class="data-item"><span class="dot"></span> Votre profil (taille, age, sexe, objectif)</div>
+    <div class="data-item"><span class="dot"></span> Resultats du diagnostic metabolique</div>
+    <div class="data-item"><span class="dot"></span> Votre serie (streak) et statistiques</div>
+    <div class="data-item"><span class="dot"></span> Donnees de sante et reponses au questionnaire</div>
+    <div class="data-item"><span class="dot"></span> Toutes les donnees stockees sur nos serveurs Firebase</div>
+  </div>
+  <div class="card">
+    <h2>Delai de conservation</h2>
+    <p>La suppression est <strong>immediate</strong> dans Firebase Authentication et Firestore. Aucune donnee personnelle n'est conservee apres la suppression du compte.</p>
+  </div>
+  <div class="card">
+    <h2>Demande de suppression par email</h2>
+    <p>Si vous ne pouvez pas acceder a l'application, envoyez un email a :</p>
+    <div class="contact">
+      <a href="mailto:omiexpertisesbitget@gmail.com">omiexpertisesbitget@gmail.com</a>
+      <p style="margin-top:8px; font-size:13px; color:#555;">Indiquez l'adresse email associee a votre compte. Nous traiterons votre demande sous <strong>48 heures</strong>.</p>
+    </div>
+  </div>
+</div>
+<footer>2026 Zero Excuse - omiexpertises SASU<br>
+  <a href="https://nours94.github.io/zeroexcuse_privacy/privacy-policy.html" style="color:#1E88E5;">Politique de confidentialite</a>
+</footer>
+</body>
+</html>
